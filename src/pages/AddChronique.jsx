@@ -3,7 +3,7 @@ import AddChroniqueForm from '../components/choniques/AddChroniqueForm'
 
 const AddChronique = () => {
   return (
-    <div>
+    <div className="AddChronique">
         <AddChroniqueForm />
     </div>
   )
