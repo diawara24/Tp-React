@@ -80,13 +80,17 @@ code {
   text-align: justify;
 }
 
-.poste {
+.poste, .profile-poste {
   width: 30%;
   height: auto;
   margin-left: 10px;
   margin-bottom: 10px;
   border: 1px solid black;
   padding: 5px;
+}
+
+.profile-poste {
+  cursor: pointer;
 }
 
 .poste-title {
@@ -124,4 +128,34 @@ code {
 
 .profile-container {
   padding: 50px;
+}
+
+.profile-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.profile-row > div  {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.profile-row > div h3 {
+  width: 100%;
+  text-align: center;
+}
+.profile-row img {
+  border-radius: 100%;
+}
+
+.posteContent  {
+  border: 1px solid black;
+  width: 730px;
+  height: 150px;
+  margin-left: 350px;
+  padding: 5px;
 }
