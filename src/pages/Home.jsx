@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from '../components/home/navbar'
 import Caroussels from '../components/home/Caroussels'
 
+
 const home = () => {
   return (
     <div>

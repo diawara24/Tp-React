@@ -18,7 +18,7 @@ code {
   display:flex;
   align-items: center;
   margin : 0 auto;
-  background-color: coral;
+  background-color: #c8ad7f;
   font-family: 'Roboto Slab';
 }
 
@@ -51,14 +51,17 @@ code {
   display: flex;
   justify-content: space-around;
   margin: 20px;
+  padding: 50px;
 }
 .carousels-content {
   margin-left: 10px;
   height: 400px;
+  width: 500px;
 }
 
 .carousels-img {
-  width: 100%;
+  width: 500px;
+  height: 300px;
 }
 
 .home-text {
@@ -66,6 +69,8 @@ code {
   padding: 10px;
   text-align: justify;
   text-size-adjust: 16px;
+  font-weight: 600;
+  color: black;
 }
 
 .about-container {
