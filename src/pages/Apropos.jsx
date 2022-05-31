@@ -3,7 +3,7 @@ import About from '../components/apropos/about'
 
 const Apropos = () => {
   return (
-    <div>
+    <div className="apropos">
       <About />
     </div>
   )
