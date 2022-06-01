@@ -7,6 +7,7 @@ import Profil from './pages/Profils'
 import Home from './pages/Home'
 import AddChronique from './pages/AddChronique'
 import Navbar from './components/home/navbar'
+import DetailPoste from './components/choniques/DetailPoste'
 
 function App() {
   
@@ -21,6 +22,7 @@ function App() {
                 <Route path="/apropos"  element={ <Apropos />} />
                 <Route path="/profil"  element={ <Profil />} />
                 <Route path="/addChronique"  element={ <AddChronique />} />
+                <Route path="/detailPoste/:idPoste"  element={ <DetailPoste />} />
             </Routes>
 
           </div>

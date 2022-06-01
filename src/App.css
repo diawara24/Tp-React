@@ -87,6 +87,11 @@ code {
   text-align: center;
 }
 
+.poste:hover {
+  cursor: pointer;
+  box-shadow: 10px 5px 5px black;;
+}
+
 .poste, .profile-poste {
   width: 30%;
   height: auto;
@@ -225,6 +230,41 @@ form > div {
   background-color: red;
   margin: 10px;
 }
+
+.detailPoste {
+  padding : 50px;
+  display: grid;
+  grid-template-columns: repeat(2, 20% 80% 1fr);
+  grid-gap: 10px;
+  width: 100%;
+  grid-gap: 5px;
+  box-sizing: border-box;
+  height: 200px;
+}
+
+.detailPoste > div {
+  border: 1px solid black;
+}
+
+
+.detailPoste .author {
+ display: flex;
+ flex: wrap;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ padding: 20px;
+ 
+}
+
+.detailPoste .author img {
+  border-radius: 100%;
+}
+
+.detailPoste .posteContent1 {
+  padding: 20px;
+}
+
 
 
 

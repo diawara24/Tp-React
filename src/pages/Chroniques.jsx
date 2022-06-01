@@ -16,9 +16,12 @@ const Chroniques = () => {
       const newState = [...data]
       return newState
     })
-    console.log(chroniques)
   })
   }, [])
+
+
+  
+
   return (
     <div className='chroniques'>
       <h1 style={{textAlign: 'center'}}>Derniers posts</h1>

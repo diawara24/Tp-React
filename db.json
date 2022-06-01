@@ -41,20 +41,6 @@
       "genre": "B",
       "poste": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, beatae! Nihil veniam repellat similique modi, consectetur soluta numquam. Quidem ipsam quod quasi deserunt blanditiis doloribus quibusdam provident dolore repellendus ducimus?",
       "id": 6
-    },
-    {
-      "title": "test",
-      "auteur": "ttt",
-      "genre": "A",
-      "poste": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, beatae! Nihil veniam repellat similique modi, consectetur soluta numquam. Quidem ipsam quod quasi deserunt blanditiis doloribus quibusdam provident dolore repellendus ducimus?\n     ",
-      "id": 7
-    },
-    {
-      "title": "ttt",
-      "auteur": "ttt",
-      "genre": "B",
-      "poste": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, beatae! Nihil veniam repellat similique modi, consectetur soluta numquam. Quidem ipsam quod quasi deserunt blanditiis doloribus quibusdam provident dolore repellendus ducimus?\",\n     ",
-      "id": 8
     }
   ]
 }
