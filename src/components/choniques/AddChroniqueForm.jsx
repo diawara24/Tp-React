@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import { useNavigate } from "react-router";
+
 
 const AddChroniqueForm = () => {
     const [inputTitle, setInputTitle] = useState('');
@@ -6,6 +8,7 @@ const AddChroniqueForm = () => {
     const [inputGenre, setInputGenre] = useState('');
     const [inputPoste, setInputPoste] = useState('');
     
+    const navigate = useNavigate();
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -34,6 +37,7 @@ const AddChroniqueForm = () => {
             setInputGenre('');
             setInputAuteur('');
             setInputPoste('');
+            navigate("/chroniques")
         })
     }
 

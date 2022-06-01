@@ -34,6 +34,13 @@
       "genre": "B",
       "poste": "test",
       "id": 5
+    },
+    {
+      "title": "Mon chronique",
+      "auteur": "Faty",
+      "genre": "B",
+      "poste": "postes test navigation",
+      "id": 6
     }
   ]
 }
