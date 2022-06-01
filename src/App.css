@@ -193,11 +193,11 @@ form {
 }
 
 
-.input-title, .input-poste {
+.input-title, .input-poste, .input-genre, .input-auteur {
   width: 100%;
 }
 
-.input-title {
+.input-title, .input-genre, .input-auteur  {
   height: 30px;
 }
 

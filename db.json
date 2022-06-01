@@ -1,0 +1,39 @@
+{
+  "chroniques": [
+    {
+      "id": 1,
+      "title": "Lorem ipsum dolor",
+      "auteur": "Diawara24",
+      "genre": "Info",
+      "poste": "Lorem ipsum dolo sit amet consectetur adipisicing elit. Itaque, beatae! Nihil veniam repellat similique modi, consectetur soluta numquam. Quidem ipsam quod quasi deserunt blanditiis doloribus quibusdam provident dolore repellendus ducimus"
+    },
+    {
+      "id": 2,
+      "title": "Lorem ipsum dolor",
+      "auteur": "Diawara24",
+      "genre": "Info",
+      "poste": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, beatae! Nihil veniam repellat similique modi, consectetur soluta numquam. Quidem ipsam quod quasi deserunt blanditiis doloribus quibusdam provident dolore repellendus ducimus?"
+    },
+    {
+      "title": "Lorem ipsum dolor",
+      "auteur": "test",
+      "genre": "A",
+      "poste": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, beatae! Nihil veniam repellat similique modi, consectetur soluta numquam. Quidem ipsam quod quasi deserunt blanditiis doloribus quibusdam provident dolore repellendus ducimus?",
+      "id": 3
+    },
+    {
+      "title": "Mon chronique",
+      "auteur": "Mourtalla",
+      "genre": "A",
+      "poste": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, beatae! Nihil veniam repellat similique modi, consectetur soluta numquam. Quidem ipsam quod quasi deserunt blanditiis doloribus quibusdam provident dolore repellendus ducimus?",
+      "id": 4
+    },
+    {
+      "title": "test",
+      "auteur": "test",
+      "genre": "B",
+      "poste": "test",
+      "id": 5
+    }
+  ]
+}
