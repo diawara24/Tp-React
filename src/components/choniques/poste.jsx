@@ -1,6 +1,23 @@
 import React from 'react'
+import { useNavigate } from 'react-router';
 
-const poste = ({title, auteur, genre, content, index}) => {
+const poste = ({title, content, index}) => {
+
+  const  navigate = useNavigate()
+  const handleClick = () => {
+    console.log(index);
+    fetch(`http://localhost:8000/chroniques/${index}`,
+    {
+      method:'DELETE',
+      headers: {
+        'Content-Type':'application/json',
+      }
+    })
+    .then(res => {res.text()
+      location.reload()})
+    .then(res => console.log(res))
+    
+  }
   return (
     <div className='poste'>
        <div className='poste-title'>
@@ -10,6 +27,7 @@ const poste = ({title, auteur, genre, content, index}) => {
         <div className='poste-content'>
          {content}
         </div>
+        <button onClick={handleClick} className="btn-delete">Supprimer</button>
     </div>
   )
 }

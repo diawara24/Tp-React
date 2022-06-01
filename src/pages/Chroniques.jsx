@@ -26,7 +26,7 @@ const Chroniques = () => {
         {
           chroniques.slice(chroniques.length - 3, chroniques.length).map(
             (poste, index) => (
-              <Poste key={index} title={poste.title} genre={poste} auteur={poste.auteur} content={poste.poste}/>
+              <Poste key={index} title={poste.title} index={poste.id} genre={poste} auteur={poste.auteur} content={poste.poste}/>
             )
           )
         }
@@ -38,7 +38,7 @@ const Chroniques = () => {
       {
           chroniques.map(
             (poste, index) => (
-              <Poste key={index} title={poste.title} genre={poste} auteur={poste.auteur} content={poste.poste}/>
+              <Poste key={index} index={poste.id}  title={poste.title} genre={poste} auteur={poste.auteur} content={poste.poste} />
             )
           )
         }

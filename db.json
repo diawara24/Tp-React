@@ -23,24 +23,38 @@
     },
     {
       "title": "Mon chronique",
-      "auteur": "Mourtalla",
-      "genre": "A",
+      "auteur": "Diawara",
+      "genre": "B",
       "poste": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, beatae! Nihil veniam repellat similique modi, consectetur soluta numquam. Quidem ipsam quod quasi deserunt blanditiis doloribus quibusdam provident dolore repellendus ducimus?",
       "id": 4
     },
     {
-      "title": "test",
-      "auteur": "test",
+      "title": "Mon test",
+      "auteur": "Faty",
       "genre": "B",
-      "poste": "test",
+      "poste": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, beatae! Nihil veniam repellat similique modi, consectetur soluta numquam. Quidem ipsam quod quasi deserunt blanditiis doloribus quibusdam provident dolore repellendus ducimus?",
       "id": 5
     },
     {
-      "title": "Mon chronique",
+      "title": "les joies du code",
       "auteur": "Faty",
       "genre": "B",
-      "poste": "postes test navigation",
+      "poste": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, beatae! Nihil veniam repellat similique modi, consectetur soluta numquam. Quidem ipsam quod quasi deserunt blanditiis doloribus quibusdam provident dolore repellendus ducimus?",
       "id": 6
+    },
+    {
+      "title": "test",
+      "auteur": "ttt",
+      "genre": "A",
+      "poste": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, beatae! Nihil veniam repellat similique modi, consectetur soluta numquam. Quidem ipsam quod quasi deserunt blanditiis doloribus quibusdam provident dolore repellendus ducimus?\n     ",
+      "id": 7
+    },
+    {
+      "title": "ttt",
+      "auteur": "ttt",
+      "genre": "B",
+      "poste": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, beatae! Nihil veniam repellat similique modi, consectetur soluta numquam. Quidem ipsam quod quasi deserunt blanditiis doloribus quibusdam provident dolore repellendus ducimus?\",\n     ",
+      "id": 8
     }
   ]
 }

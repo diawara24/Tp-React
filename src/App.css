@@ -210,7 +210,7 @@ form > div {
   margin: 10px;
 }
 
-.btn-submit {
+.btn-submit, .btn-delete{
   padding: 10px;
   width: 100px;
   text-transform: uppercase;
@@ -219,6 +219,11 @@ form > div {
   border-radius: 5px;
   color: whitesmoke;
   cursor: pointer;
+}
+
+.btn-delete {
+  background-color: red;
+  margin: 10px;
 }
 
 
