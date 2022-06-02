@@ -1,14 +1,35 @@
-import React, { useState } from 'react'
-import { useNavigate } from "react-router";
+import React, { useEffect, useState } from 'react'
+import { useNavigate, useParams } from "react-router";
 
 
 const AddChroniqueForm = () => {
+    const {idPoste} = useParams();
+
     const [inputTitle, setInputTitle] = useState('');
     const [inputAuteur, setInputAuteur] = useState('');
     const [inputGenre, setInputGenre] = useState('');
     const [inputPoste, setInputPoste] = useState('');
     
     const navigate = useNavigate();
+
+    useEffect( () => {
+        if(idPoste){
+            fetch(
+                `http://localhost:8000/chroniques/${idPoste}`,
+                {
+                    method: 'GET'
+                }
+            )
+            .then(response => response.json())
+            .then(data => {
+                setInputTitle(data.title) 
+                setInputAuteur(data.auteur)
+                setInputGenre(data.genre)
+                setInputPoste(data.poste)
+                
+            })
+        }
+    },[])
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -18,27 +39,41 @@ const AddChroniqueForm = () => {
             genre: inputGenre,
             poste: inputPoste
         }
-        
-        fetch(
-            'http://localhost:8000/chroniques',
-            {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify(chronique)
-               
-            }
-        )
-        .then( (res) => {
-            console.log(res);
-            console.log("new chronique added successfully");
-            setInputTitle('');
-            setInputGenre('');
-            setInputAuteur('');
-            setInputPoste('');
-            navigate("/chroniques")
-        })
+        if(!idPoste){
+            fetch(
+                'http://localhost:8000/chroniques',
+                {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(chronique)
+                
+                }
+            )
+            .then( (res) => {
+                console.log(res);
+                console.log("new chronique added successfully");
+                navigate("/chroniques")
+            })
+        } else {
+            fetch(
+                `http://localhost:8000/chroniques/${idPoste}`,
+                {
+                    method: 'PUT',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(chronique)
+                
+                }
+            )
+            .then( (res) => {
+                console.log(res);
+                console.log("chronique updated successfully");
+                navigate("/chroniques")
+            })
+        }
     }
 
 

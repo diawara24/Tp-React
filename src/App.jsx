@@ -7,6 +7,8 @@ import Profil from './pages/Profils'
 import Home from './pages/Home'
 import AddChronique from './pages/AddChronique'
 import Navbar from './components/home/navbar'
+import Login from './components/login/Login'
+import SignUp from './components/signup/SignUp'
 import DetailPoste from './components/choniques/DetailPoste'
 
 function App() {
@@ -22,7 +24,10 @@ function App() {
                 <Route path="/apropos"  element={ <Apropos />} />
                 <Route path="/profil"  element={ <Profil />} />
                 <Route path="/addChronique"  element={ <AddChronique />} />
+                <Route path="/addChronique/:idPoste"  element={ <AddChronique />} />
                 <Route path="/detailPoste/:idPoste"  element={ <DetailPoste />} />
+                <Route path="/login"  element={ <Login />} />
+                <Route path="/signup"  element={ <SignUp />} />
             </Routes>
 
           </div>

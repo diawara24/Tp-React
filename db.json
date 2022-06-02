@@ -5,27 +5,30 @@
       "title": "Lorem ipsum dolor",
       "auteur": "Diawara24",
       "genre": "Info",
-      "poste": "Lorem ipsum dolo sit amet consectetur adipisicing elit. Itaque, beatae! Nihil veniam repellat similique modi, consectetur soluta numquam. Quidem ipsam quod quasi deserunt blanditiis doloribus quibusdam provident dolore repellendus ducimus"
+      "poste": "Lorem ipsum dolo sit amet consectetur adipisicing elit. Itaque, beatae! Nihil veniam repellat similique modi, consectetur soluta numquam. Quidem ipsam quod quasi deserunt blanditiis doloribus quibusdam provident dolore repellendus ducimus",
+      "userId": 1
     },
     {
       "id": 2,
       "title": "Lorem ipsum dolor",
       "auteur": "Diawara24",
       "genre": "Info",
-      "poste": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, beatae! Nihil veniam repellat similique modi, consectetur soluta numquam. Quidem ipsam quod quasi deserunt blanditiis doloribus quibusdam provident dolore repellendus ducimus?"
+      "poste": "Molestias, explicabo enim repellat corrupti facere magni ipsum in modi dignissimos? Error deserunt alias cumque, voluptatum aspernatur libero non debitis magni atque nam sed. Nobis et vero corporis totam fuga. Molestiae optio voluptatum consectetur ducimus veniam magni nostrum doloribus maxime fugiat iste cum, accusamus, sit quo! Earum consequuntur eveniet eius ut architecto aperiam voluptatem quo ratione repellat assumenda, culpa totam.Accusantium, officia cum debitis repudiandae deleniti, sunt consectetur nam reprehenderit eveniet porro corporis unde blanditiis recusandae ullam quo quis eligendi voluptatem quod numquam illo adipisci odit modi distinctio. Hic, iure. Maiores iure, magnam suscipit incidunt quam animi et dolorum qui amet consectetur nam dolorem expedita? Sint, asperiores quibusdam. Sit sequi assumenda similique at quisquam odio vel cum, ducimus quas voluptas? Provident ipsa praesentium, quam est aut sit aliquam placeat vitae corporis laudantium quidem, nihil ratione, necessitatibus optio? A dolorem culpa modi debitis ipsum nostrum dolorum nam voluptatem, minus vel architecto.Quis vel itaque voluptatum, consectetur id",
+      "userId": 1
     },
     {
       "title": "Lorem ipsum dolor",
       "auteur": "test",
       "genre": "A",
       "poste": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, beatae! Nihil veniam repellat similique modi, consectetur soluta numquam. Quidem ipsam quod quasi deserunt blanditiis doloribus quibusdam provident dolore repellendus ducimus?",
-      "id": 3
+      "id": 3,
+      "userId": 1
     },
     {
-      "title": "Mon chronique",
-      "auteur": "Diawara",
+      "title": "Mon chronique update",
+      "auteur": "Faty",
       "genre": "B",
-      "poste": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, beatae! Nihil veniam repellat similique modi, consectetur soluta numquam. Quidem ipsam quod quasi deserunt blanditiis doloribus quibusdam provident dolore repellendus ducimus?",
+      "poste": "Iure sequi distinctio commodi magni laboriosam eos ducimus ad voluptas quae, recusandae molestiae eveniet architecto voluptatem illo est deleniti doloremque nemo dicta inventore vero nostrum sapiente quos praesentium cupiditate. Rerum! Quae repudiandae nemo quasi distinctio, earum in ducimus deserunt molestias officiis magnam molestiae! Aut porro temporibus quod dolor veritatis qui libero, minima animi, doloribus, modi repudiandae nulla at illo possimus.Molestias i",
       "id": 4
     },
     {
@@ -33,14 +36,31 @@
       "auteur": "Faty",
       "genre": "B",
       "poste": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, beatae! Nihil veniam repellat similique modi, consectetur soluta numquam. Quidem ipsam quod quasi deserunt blanditiis doloribus quibusdam provident dolore repellendus ducimus?",
-      "id": 5
+      "id": 5,
+      "userId": 2
     },
     {
       "title": "les joies du code",
       "auteur": "Faty",
       "genre": "B",
       "poste": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, beatae! Nihil veniam repellat similique modi, consectetur soluta numquam. Quidem ipsam quod quasi deserunt blanditiis doloribus quibusdam provident dolore repellendus ducimus?",
-      "id": 6
+      "id": 6,
+      "userId": 2
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "Mourtalla Faty",
+      "username": "diawara24",
+      "password": "passer",
+      "profileImage": ""
+    },
+    {
+      "name": "faty",
+      "username": "faty",
+      "password": "passer",
+      "id": 2
     }
   ]
 }

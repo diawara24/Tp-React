@@ -26,9 +26,9 @@ const DetailPoste = () => {
             <img src="https://via.placeholder.com/150" alt="" />
             <hgroup>
                 <h5>
-                    <i>Auteur {poste.auteur}</i>
+                    <i>Auteur: {poste.auteur}</i>
                 </h5>
-                <h6><i>Genre {poste.genre}</i></h6>
+                <h6><i>Genre: {poste.genre}</i></h6>
             </hgroup>
         </div>
         <div  className='posteContent1'>

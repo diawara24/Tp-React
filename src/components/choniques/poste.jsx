@@ -20,8 +20,11 @@ const poste = ({title, content, index}) => {
   }
 
   const HandleClickView = () => {
-    
     navigate(`/detailPoste/${index}`)
+  }
+
+  const handleClickUpdate = () => {
+    navigate(`/addChronique/${index}`)
   }
 
   return (
@@ -31,9 +34,10 @@ const poste = ({title, content, index}) => {
         <h4 onClick={HandleClickView}>{title}</h4>
        </div>
         <div className='poste-content' onClick={HandleClickView}>
-         {content}
+         {content.substring(0, 50) + " ..."} 
         </div>
         <button onClick={handleClick} className="btn-delete">Supprimer</button>
+        <button onClick={handleClickUpdate} className="btn-update">Modifier</button>
     </div>
   )
 }

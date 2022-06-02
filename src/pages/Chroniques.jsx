@@ -23,30 +23,33 @@ const Chroniques = () => {
   
 
   return (
-    <div className='chroniques'>
-      <h1 style={{textAlign: 'center'}}>Derniers posts</h1>
-      <div className="lastPost">
-        {
-          chroniques.slice(chroniques.length - 3, chroniques.length).map(
-            (poste, index) => (
-              <Poste key={index} title={poste.title} index={poste.id} genre={poste} auteur={poste.auteur} content={poste.poste}/>
+    
+      <div className='chroniques'>
+        <h1 style={{textAlign: 'center'}}>Derniers posts</h1>
+        <div className="lastPost">
+          {
+            chroniques.slice(chroniques.length - 3, chroniques.length).map(
+              (poste, index) => (
+                <Poste key={index} title={poste.title} index={poste.id} genre={poste} auteur={poste.auteur} content={poste.poste}/>
+              )
             )
-          )
-        }
-       
+          }
         
-      </div>
-      <h1 style={{textAlign: 'center'}}>Tous les chroniques</h1>
-      <div className="AllPost">
-      {
-          chroniques.map(
-            (poste, index) => (
-              <Poste key={index} index={poste.id}  title={poste.title} genre={poste} auteur={poste.auteur} content={poste.poste} />
+          
+        </div>
+        <h1 style={{textAlign: 'center'}}>Tous les chroniques</h1>
+        <div className="AllPost">
+        {
+            chroniques.map(
+              (poste, index) => (
+                <Poste key={index} index={poste.id}  title={poste.title} genre={poste} auteur={poste.auteur} content={poste.poste} />
+              )
             )
-          )
-        }
+          }
+        </div>
       </div>
-    </div>
+
+    
   )
 }
 
