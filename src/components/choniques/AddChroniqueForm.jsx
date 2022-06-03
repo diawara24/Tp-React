@@ -37,7 +37,8 @@ const AddChroniqueForm = () => {
             title: inputTitle,
             auteur: inputAuteur,
             genre: inputGenre,
-            poste: inputPoste
+            poste: inputPoste,
+            userId: JSON.parse(localStorage.getItem('user')).id
         }
         if(!idPoste){
             fetch(

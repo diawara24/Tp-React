@@ -3,20 +3,22 @@ import Poste from '../components/choniques/poste'
 
 const Chroniques = () => {
   const [chroniques, setChroniques] = useState([])
+  const [user, setUser] = useState(null);
   useEffect( () => {
     fetch(
       'http://localhost:8000/chroniques',
       {
           method: 'GET'
       }
-  )
-  .then( (response) => response.json())
-  .then( data => {
-    setChroniques(o => {
-      const newState = [...data]
-      return newState
+    )
+    .then( (response) => response.json())
+    .then( data => {
+      setChroniques(o => {
+        const newState = [...data]
+        return newState
+      })
     })
-  })
+    setUser(JSON.parse(localStorage.getItem('user')))
   }, [])
 
 
@@ -30,7 +32,7 @@ const Chroniques = () => {
           {
             chroniques.slice(chroniques.length - 3, chroniques.length).map(
               (poste, index) => (
-                <Poste key={index} title={poste.title} index={poste.id} genre={poste} auteur={poste.auteur} content={poste.poste}/>
+                <Poste key={index} title={poste.title} index={poste.id} genre={poste} auteur={poste.auteur} content={poste.poste} displayBtn={user.id === poste.userId ? true : false}/>
               )
             )
           }
@@ -42,7 +44,7 @@ const Chroniques = () => {
         {
             chroniques.map(
               (poste, index) => (
-                <Poste key={index} index={poste.id}  title={poste.title} genre={poste} auteur={poste.auteur} content={poste.poste} />
+                <Poste key={index} index={poste.id}  title={poste.title} genre={poste} auteur={poste.auteur} content={poste.poste} displayBtn={user.id === poste.userId ? true : false}/>
               )
             )
           }

@@ -1,11 +1,9 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router';
 
-const poste = ({title, content, index}) => {
-
+const poste = ({title, content, index, displayBtn}) => {
   const  navigate = useNavigate()
   const handleClick = () => {
-    console.log(index);
     fetch(`http://localhost:8000/chroniques/${index}`,
     {
       method:'DELETE',
@@ -36,8 +34,14 @@ const poste = ({title, content, index}) => {
         <div className='poste-content' onClick={HandleClickView}>
          {content.substring(0, 50) + " ..."} 
         </div>
-        <button onClick={handleClick} className="btn-delete">Supprimer</button>
-        <button onClick={handleClickUpdate} className="btn-update">Modifier</button>
+        { displayBtn &&
+          <>  
+             <button onClick={handleClick} className="btn-delete">Supprimer</button>
+             <button onClick={handleClickUpdate} className="btn-update">Modifier</button>
+          </>
+         
+        }
+        
     </div>
   )
 }

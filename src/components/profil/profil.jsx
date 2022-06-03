@@ -43,7 +43,7 @@ const Profil = () => {
       <div className='profile-row'>
         { user &&
           <div>
-            <img src="https://via.placeholder.com/150" alt="" />
+            <img src={user.profileImage} alt=""  width="150" height="150"/>
             <h3>{user.username}</h3>
           </div>
         }

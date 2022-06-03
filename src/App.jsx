@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import {BrowserRouter, Routes, Route, Link} from 'react-router-dom'
 import './App.css'
 import Chroniques from './pages/Chroniques'
@@ -12,15 +12,28 @@ import SignUp from './components/signup/SignUp'
 import DetailPoste from './components/choniques/DetailPoste'
 
 function App() {
+
+  const [isLoged, setIsloged] = useState(false)
+  
+
+  useEffect( () => {
+    console.log("test");
+    if(localStorage.getItem('user')){
+    
+      setIsloged(true)
+    }else {
+      setIsloged(false)
+    }
+  },[])
   
   return (
     <div className="App">
         <BrowserRouter>
-          <Navbar />
+          <Navbar isLoged={isLoged}/>
           <div className="content">
             <Routes>
                 <Route path="/"  element={ <Home />} />
-                <Route path="/chroniques"  element={ <Chroniques />} />
+                <Route path="/chroniques"  element={ <Chroniques  />} />
                 <Route path="/apropos"  element={ <Apropos />} />
                 <Route path="/profil"  element={ <Profil />} />
                 <Route path="/addChronique"  element={ <AddChronique />} />

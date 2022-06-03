@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router';
+import { faker } from '@faker-js/faker';
 
 const SignUp = () => {
 
@@ -16,7 +17,7 @@ const SignUp = () => {
             "name": name,
             "username": username,
             "password": password,
-            "profileImage": ""
+            "profileImage": faker.image.avatar()
         }
         fetch(
             'http://localhost:8000/users',

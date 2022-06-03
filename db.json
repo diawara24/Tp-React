@@ -1,12 +1,12 @@
 {
   "chroniques": [
     {
-      "id": 1,
       "title": "Lorem ipsum dolor",
-      "auteur": "Diawara24",
-      "genre": "Info",
+      "auteur": "faty",
+      "genre": "B",
       "poste": "Lorem ipsum dolo sit amet consectetur adipisicing elit. Itaque, beatae! Nihil veniam repellat similique modi, consectetur soluta numquam. Quidem ipsam quod quasi deserunt blanditiis doloribus quibusdam provident dolore repellendus ducimus",
-      "userId": 1
+      "userId": 1,
+      "id": 1
     },
     {
       "id": 2,
@@ -46,6 +46,22 @@
       "poste": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, beatae! Nihil veniam repellat similique modi, consectetur soluta numquam. Quidem ipsam quod quasi deserunt blanditiis doloribus quibusdam provident dolore repellendus ducimus?",
       "id": 6,
       "userId": 2
+    },
+    {
+      "title": "test",
+      "auteur": "jean",
+      "genre": "A",
+      "poste": "test",
+      "userId": 3,
+      "id": 7
+    },
+    {
+      "title": "test",
+      "auteur": "jean",
+      "genre": "A",
+      "poste": "test",
+      "userId": 3,
+      "id": 8
     }
   ],
   "users": [
@@ -61,6 +77,13 @@
       "username": "faty",
       "password": "passer",
       "id": 2
+    },
+    {
+      "name": "jean",
+      "username": "jean",
+      "password": "passer",
+      "profileImage": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/828.jpg",
+      "id": 3
     }
   ]
 }
